@@ -13,7 +13,6 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="testingFlow" doc:id="372d15cc-4345-4d9d-94d4-98d8bbfd18ab" >
 		<http:listener doc:name="Listener" doc:id="9ef0e9ad-7001-4f76-986b-ad70f68f7477" config-ref="HTTP_Listener_config" path="test"/>
-		<json-logger:logger doc:name="Logger" doc:id="8b2df34d-05b3-4140-8505-0e56edb72c7d" message="logging "/>
 		<ee:transform doc:name="Transform Message" doc:id="5e94e9c0-2096-48e4-a5d2-62c474765050" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
